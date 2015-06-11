@@ -1,0 +1,6 @@
+png(paste(aulas,"concelhos_rio.png",sep="\\"), width=600, height=800, res=120)
+plot(concelhos.etrs, xlim=c(-95000, 151000), ylim=c(11000,136000))
+plot(concelhos.etrs[aux,],add=TRUE, col="yellow")
+plot(rio,add=TRUE,col="blue")
+graphics.off()
+
